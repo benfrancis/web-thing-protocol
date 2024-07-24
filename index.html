@@ -31,12 +31,13 @@
   <section id="abstract">
     <p>This document defines a WebSocket sub-protocol called the Web Thing
       Protocol, for monitoring and controlling connected devices over the
-      World Wide Web. The Web Thing Protocol is intended as a common protocol
-      for the <a href="https://www.w3.org/WoT/">Web of Things</a>, to enable
-      a WoT
+      World Wide Web. The Web Thing Protocol is intended as a dedicated 
+      real-time protocol for the <a href="https://www.w3.org/WoT/">Web of 
+      Things</a>, to enable a WoT
       <a href="https://www.w3.org/TR/wot-architecture/#dfn-consumer">Consumer</a>
-      to communicate in real-time with one or more WoT
-      <a href="https://www.w3.org/TR/wot-architecture/#dfn-web-thing">Things</a>.
+      to communicate with one or more WoT
+      <a href="https://www.w3.org/TR/wot-architecture/#dfn-web-thing">Things</a>
+      over a WebSocket connection.
     </p>
   </section>
 
@@ -52,7 +53,7 @@
 
   <section id="introduction" class="informative">
     <h2>Introduction</h2>
-    <p>This document defines a common WebSocket [[WEBSOCKETS]] sub-protocol for
+    <p>This document defines a WebSocket [[WEBSOCKETS]] sub-protocol for
       monitoring and controlling connected devices over the Web.
     </p>
     <p>The <a href="https://www.w3.org/WoT/">Web of Things</a> (WoT) is a
@@ -65,7 +66,7 @@
       devices) on the Web. The WoT Discovery specification [[wot-discovery]]
       defines mechanisms for <em>discovering</em> Things on the Web. This
       specification complements those building blocks by
-      defining a common protocol for <em>communicating</em> with Things over the
+      defining a dedicated real-time protocol for <em>communicating</em> with Things over the
       Web.
     </p>
     <p>WebSockets [[WEBSOCKETS]] provide a way to upgrade a
